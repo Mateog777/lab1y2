@@ -27,7 +27,13 @@ class Lista:
         promedio = s/len(obj.lista)
         return promedio
 
-n = int(input("¿Cuantos números va a ingresar?: "))
+while True:
+    try:
+        n = int(input("¿Cuantos números va a ingresar?: "))
+        break
+    except ValueError:
+        print("Debe ingresar un número entero")
+
 L = []
 for i in range (0,n):
     L += [int(input(f"Ingrese el número {i+1}: "))]
@@ -37,4 +43,5 @@ print(l1.max())
 print(l1.min())
 print(l1.suma())
 print(l1.promedio())
+
 
