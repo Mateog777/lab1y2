@@ -105,6 +105,7 @@ while True:
     c = str(input("Ingrese la ciudad de residencia usuario: "))
     e = str(input("Ingrese el edificio de residencia usuario: "))
     a = int(input("Ingrese el apto de residencia del usuario: "))
+    break
   except ValueError:
         print("Información incorrecta. Intente nuevamente")
 fechau = Fecha(dd,mm,aa)
