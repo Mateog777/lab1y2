@@ -88,10 +88,10 @@ class Usuario:
     def get_dir(usr):
         return usr.dir
     def formatou(usr):
-        return (f"Nombre: {usr.nombre} - ID: {usr.id} - Fecha nacimiento: {usr.fecha_nacimiento} - Telefono: {usr.tel} - Direccion: {usr.dir}")
+        return (f"Nombre: {usr.nombre} - ID: {usr.id} - Fecha nacimiento: {usr.fecha_nacimiento.formatof()} - Telefono: {usr.tel} - Direccion: {usr.dir.formatod()}")
 fecha1 = Fecha(11,5,2003)
 print(fecha1.formatof())
 direccion1 = Direccion(15, "Conjunto los balsos", "Bello", "Medellin", 7, 1506)
 print(direccion1.formatod())
-usuario1 = Usuario("Mateo", 77, fecha1.formatof(), "Medellin", 6033672, "mateo@gmail.com", direccion1.formatod())
+usuario1 = Usuario("Mateo", 77, fecha1, "Medellin", 6033672, "mateo@gmail.com", direccion1)
 print(usuario1.formatou())
